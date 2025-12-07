@@ -1,25 +1,86 @@
+/* Page background and layout */
 body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to right, #a8ff78, #78ffd6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #222;
+}
+
+/* Main wrapper */
+.container {
     text-align: center;
 }
+
+/* Subtitle text */
+.subtitle {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 2rem 2.5rem;
+    display: inline-block;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    width: 320px;
+}
+
+/* Input fields */
+.field {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight:600;
+    display: block;
+    margin-bottom: 4px;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus {
+    border-color: #43c799;
+}
+
+/* Button styling */
 #formBtn {
+    width: 100%;
     color: white;
-    background-color:coral;
+    background-color: #ff7f50;
     border: none;
-    border-radius: 2px;
-    padding: 0.25rem 1rem;
-    margin-top: 1rem;
+    border-radius: 4px;
+    padding: 0.6rem;
     cursor: pointer;
     font-size: 1rem;
+    font-weight: bold;
+    transition: 0.25s;
 }
 
+#formBtn:hover {
+    background-color: #ff6330;
+}
 form {
-    border: 2px solid grey;
-    display: inline-block;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    text-align: left;
-}
-
-.field {
-    margin-bottom: 0.5rem;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    padding: 2rem 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.2);
+    width: 340px;
 }

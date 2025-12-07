@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" type="text/css" />
-    <title>Home Page</title>
+    <title>Student Sign Up | My University</title>
 </head>
 <body>
-    <h1>Hi student, Welcome to XYZ University!</h1>
-    <p>You can sign up to the platform to access all important notes & lectures.</p>
+    <div class="container">
+        <h1>Welcome to Student Portal</h1>
+        <p class="subtitle">Create your student account to access notes, lectures & resources.</p>
 
-    <form action="/addUser" method="POST" target="_blank" id="signupForm">
-        <div class="field">
-            <label for="email">Email: </label>
-            <input type="text" placeholder="jane@email.com" name="email">
-        </div>
-        <div class="field">    
-        <label for="username">Username: </label>
-            <input type="text" placeholder="Jane Doe" name="username">
-        </div>
-        <div class="field">
-            <label for="password">Password: </label>
-            <input type="password" placeholder="password" name="password">
-        </div>
-        
-        <button id="formBtn">Create Account</button>
-        
-    </form>
+        <form action="/addUser" method="POST" id="signupForm">
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Enter Email" name="email">
+            </div>
+
+            <div class="field">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter Username" name="username">
+            </div>
+
+            <div class="field">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" name="password">
+            </div>
+
+            <button id="formBtn">Create Account</button>
+        </form>
+    </div>
 </body>
-
 </html>
